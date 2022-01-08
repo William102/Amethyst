@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Amethyst</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_scouting">Scouting</string>
+    <string name="menu_rankings">Rankings</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_matches">Matches</string>
+    <string name="menu_settings">Settings</string>
+</resources>
