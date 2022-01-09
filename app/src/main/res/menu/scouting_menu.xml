@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_scouting"
+        android:icon="@drawable/icon_scouting"
+        android:title="Match Scouting" />
+
+    <item
+        android:id="@+id/nav_pit"
+        android:icon="@drawable/icon_matches"
+        android:title="Pit Scouting" />
+</menu>

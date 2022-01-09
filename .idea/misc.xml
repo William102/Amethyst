@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/drawable/icon_create.xml" value="0.2203125" />
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/fragment_match_active.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/fragment_match_scouting.xml" value="0.18" />
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/fragment_matches.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/fragment_pit.xml" value="0.25" />
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/fragment_settings.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/xml/settings.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
