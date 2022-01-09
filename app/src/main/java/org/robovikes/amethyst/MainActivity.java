@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.view.Menu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.preference.PreferenceManager;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -32,12 +34,17 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_events, R.id.nav_scouting, R.id.nav_rankings, R.id.nav_matches, R.id.nav_settings, R.id.nav_pit)
+                R.id.nav_events, R.id.nav_scouting, R.id.nav_rankings, R.id.nav_matches, R.id.nav_settings,
+                R.id.nav_pit, R.id.nav_create_event, R.id.nav_create_team, R.id.nav_create_match)
                 .setOpenableLayout(drawer)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        Boolean darkMode = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("darkMode", false);
+        if(darkMode) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
     }
 
     @Override

@@ -21,7 +21,7 @@
             android:icon="@drawable/icon_matches"
             android:title="@string/menu_matches" />
         <item
-            android:id="@+id/nav_create"
+            android:id="@+id/nav_create_event"
             android:icon="@drawable/icon_create"
             android:title="@string/menu_create" />
         <item

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_create_event"
+        android:icon="@drawable/icon_events"
+        android:title="Event" />
+
+    <item
+        android:id="@+id/nav_create_match"
+        android:icon="@drawable/icon_create_match"
+        android:title="Match" />
+
+    <item
+        android:id="@+id/nav_create_team"
+        android:icon="@drawable/icon_teams"
+        android:title="Team" />
+</menu>

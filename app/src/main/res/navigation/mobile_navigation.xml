@@ -37,4 +37,19 @@
         android:name="org.robovikes.amethyst.Fragments.MatchesFragment"
         android:label="Matches"
         tools:layout="@layout/fragment_matches" />
+    <fragment
+        android:id="@+id/nav_create_team"
+        android:name="org.robovikes.amethyst.Fragments.Create.Team"
+        android:label="Team Creation"
+        tools:layout="@layout/fragment_create_team" />
+    <fragment
+        android:id="@+id/nav_create_event"
+        android:name="org.robovikes.amethyst.Fragments.Create.Event"
+        android:label="Event Creation"
+        tools:layout="@layout/fragment_create_event" />
+    <fragment
+        android:id="@+id/nav_create_match"
+        android:name="org.robovikes.amethyst.Fragments.Create.Match"
+        android:label="Match Creation"
+        tools:layout="@layout/fragment_create_match" />
 </navigation>
