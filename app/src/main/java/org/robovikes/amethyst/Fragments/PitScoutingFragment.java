@@ -6,6 +6,8 @@ import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -27,6 +29,7 @@ public class PitScoutingFragment extends Fragment {
         binding = FragmentPitBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
         final Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(new Runnable() {
             @Override
@@ -43,5 +46,7 @@ public class PitScoutingFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+
+
     }
 }

@@ -13,4 +13,12 @@
     <string name="menu_matches">Matches</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_create">Create</string>
+
+    <string-array name="teamSpinner">
+        <item>701</item>
+        <item>6845</item>
+        <item>0000</item>
+        <item>9345</item>
+        <item>94533</item>
+    </string-array>
 </resources>

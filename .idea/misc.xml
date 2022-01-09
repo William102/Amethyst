@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< Updated upstream
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/drawable/icon_create.xml" value="0.2203125" />
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/drawable/icon_events.xml" value="0.1125" />
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/drawable/icon_matches.xml" value="0.1125" />
@@ -22,6 +23,10 @@
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/menu/create_menu.xml" value="0.1" />
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/menu/scouting_menu.xml" value="0.1" />
         <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/xml/settings.xml" value="0.20416666666666666" />
+=======
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Scouting/Documents/Amethyst/app/src/main/res/layout/fragment_pit.xml" value="0.1" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
