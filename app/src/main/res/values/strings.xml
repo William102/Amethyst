@@ -22,5 +22,8 @@
         <item>5</item>
         <item>12</item>
     </string-array>
+    <string name="title_activity_auto_match_fragment">AutoMatchFragmentActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 >>>>>>> Stashed changes
 </resources>

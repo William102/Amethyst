@@ -15,15 +15,15 @@
         android:text="Setup The Match"
         android:textAlignment="center"
         android:textSize="50sp"
-        android:textColor="@color/black"/>
+        />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select Match"
-        android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:textSize="30sp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,29 +32,32 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/pastelRed"
-            android:text="-" />
+            android:text="-"
+            android:textSize="30sp"/>
 
         <EditText
             android:id="@+id/matchNumber"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="match"
-            android:layout_gravity="center"/>
+            android:textAlignment="center"
+            android:textSize="25sp"/>
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/pastelGreen"
-            android:text="+" />
+            android:text="+"
+            android:textSize="30sp"/>
 
     </LinearLayout>
 
@@ -63,12 +66,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select a team to scout for this match"
-        android:textAlignment="center"/>
+        android:textSize="30sp"
+        />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        />
 
     <Button
         android:id="@+id/startMatch"
@@ -76,7 +82,7 @@
         android:layout_height="wrap_content"
         android:text="START MATCH"
         android:textAlignment="center"
-        android:textColor="@color/black"
+
         android:textSize="25sp"/>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

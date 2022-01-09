@@ -63,7 +63,7 @@ public class MatchScoutingFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavController navController = Navigation.findNavController(getActivity(),R.id.nav_host_fragment_content_main);
-                navController.navigate(R.id.nav_scouting);
+                navController.navigate(R.id.nav_activeScouting);
 
             }
         });
