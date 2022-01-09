@@ -13,4 +13,14 @@
     <string name="menu_matches">Matches</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_create">Create</string>
+
+    <string-array name="teams">
+        <item>6</item>
+        <item>1057</item>
+        <item>213</item>
+        <item>8</item>
+        <item>5</item>
+        <item>12</item>
+    </string-array>
+>>>>>>> Stashed changes
 </resources>
