@@ -14,7 +14,7 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_create">Create</string>
 
-<<<<<<< HEAD
+
     <string-array name="teamSpinner">
         <item>701</item>
         <item>6845</item>
@@ -22,7 +22,7 @@
         <item>9345</item>
         <item>94533</item>
     </string-array>
-=======
+
     <string-array name="teams">
         <item>6</item>
         <item>1057</item>
@@ -34,6 +34,5 @@
     <string name="title_activity_auto_match_fragment">AutoMatchFragmentActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
->>>>>>> Stashed changes
->>>>>>> master
+
 </resources>
