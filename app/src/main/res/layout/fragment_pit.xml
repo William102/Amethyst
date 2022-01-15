@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".Fragments.PitScoutingFragment">
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/scouting_bar"
             android:layout_width="match_parent"
@@ -22,49 +23,51 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-    <Spinner
-        android:id="@+id/teamSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="32dp"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Auto Questions"
-        android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auto questions"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Do you have an auto?" />
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/teamSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:hint="choose team"
+                android:minHeight="32dp" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="yes" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have an auto?"
+                android:textSize="15sp" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="no" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    </RadioGroup>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="yes" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="no" />
+
+            </RadioGroup>
 
             <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="what does your robot do if you do have an auto?" />
+        android:text="What does your robot do if you do have an auto?" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -97,7 +100,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="can you intake cargo off of the ground?" />
+                android:text="Can you intake cargo off of the ground?" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -119,32 +122,40 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="if you have a human player, how accurate are they?" />
+        android:text="If you have a human player, how accurate are they on a scale of 1-10? (10 being the best)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accuracy 0"
+                android:id="@+id/textViewAccuracy"/>
+
+            <SeekBar
+                android:id="@+id/seekBarAccuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10"
+                android:progress="0" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If you are shooting in the upper hub, how many?" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="if you are shooting in the upper hub, how many?" />
+        android:text="If you are shooting in the lower hub, how many?" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="if you are shooting in the lower hub, how many?" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
@@ -193,17 +204,17 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="where from the field can you shoot? can you shoot from anywhere or do you have to be in a certain spot?" />
+        android:text="Where from the field can you shoot? can you shoot from anywhere or do you have to be in a certain spot?" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
@@ -214,12 +225,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="do you do defense?" />
+        android:text="Do you do defense?" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -240,32 +251,33 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="rate defense on a scale of 1 - 10 (10 being the best) " />
+        android:text="Rate defense on a scale of 1 - 10 (10 being the best) " />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="rating 5"
+        android:text="rating 0"
         android:id="@+id/textViewRating"/>
 
             <SeekBar
                 android:id="@+id/seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:max="10"
-                android:progress="5"/>
+                android:progress="0" />
 
             <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="end game questions"
+        android:text="End game questions"
         android:textAlignment="center"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="can you climb"/>
+        android:text="Can your robot climb?"/>
 
     <RadioGroup
             android:layout_width="match_parent"
@@ -285,7 +297,7 @@
             <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="where is your starting point?"/>
+        android:text="Where is your starting point?"/>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -307,7 +319,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="what is the highest bar your robot can reach?"/>
+        android:text="What is the highest bar your robot can reach?"/>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -338,7 +350,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="what is the most consistent bar your robot can reach?"/>
+                android:text="What is the most consistent bar your robot can reach?"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -401,7 +413,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="do you have an open or closed chassis?" />
+        android:text="Do you have an open or closed chassis?" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -426,7 +438,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="do you have an open or closed bumper?" />
+        android:text="Do you have an open or closed bumper?" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -451,62 +463,62 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="drive train" />
+        android:text="Drive train" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="intake" />
+        android:text="Intake" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="mechanism" />
+        android:text="Mechanism" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="programming language (robot)" />
+        android:text="Programming language (robot)" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="programming language (app)" />
+        android:text="Programming language (app)" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:hint="type here" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="climbing mechanism" />
+        android:text="Climbing mechanism" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:hint="type here"/>
 
         </LinearLayout>
     </ScrollView>
