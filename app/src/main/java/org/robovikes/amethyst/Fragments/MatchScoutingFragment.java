@@ -26,7 +26,6 @@ import org.robovikes.amethyst.databinding.FragmentMatchScoutingBinding;
 
 public class MatchScoutingFragment extends Fragment {
 
-    private Spinner teamSpinner;
     private FragmentMatchScoutingBinding binding;
     private int match = 1;
 
@@ -34,7 +33,7 @@ public class MatchScoutingFragment extends Fragment {
 
         binding = FragmentMatchScoutingBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        setupSpinners();
+
 
         Button button = root.findViewById(R.id.startMatch);
         Button plusButton = root.findViewById(R.id.button2);
@@ -86,27 +85,7 @@ public class MatchScoutingFragment extends Fragment {
         binding = null;
     }
 
-    public void setupSpinners(){
-        View root = binding.getRoot();
 
-        teamSpinner = root.findViewById(R.id.spinner2);
-
-        ArrayAdapter<CharSequence> teamAdapter = ArrayAdapter.createFromResource(root.getContext(),R.array.teams,android.R.layout.simple_spinner_item);
-        teamAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        teamSpinner.setAdapter(teamAdapter);
-
-        teamSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String choice = parent.getItemAtPosition(position).toString();
-                Toast.makeText(binding.getRoot().getContext(), choice, Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
     }
-}
+
 

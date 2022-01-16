@@ -27,21 +27,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Auto questions"
+                android:text="@string/autoQuestionsSection"
                 android:textAlignment="center"
                 android:textSize="20sp" />
-
-            <Spinner
-                android:id="@+id/teamSpinner"
-                android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:hint="choose team"
-                android:minHeight="32dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Do you have an auto?"
+                android:text="@string/haveAutoQuestion"
                 android:textSize="15sp" />
 
             <RadioGroup
@@ -53,13 +46,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="yes" />
+                    android:text="@string/autoYes" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="no" />
+                    android:text="@string/autoNo" />
 
             </RadioGroup>
 
@@ -67,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="What does your robot do if you do have an auto?" />
+        android:text="@string/robotAutoFunctionQuestion" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,22 +70,22 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="taxiing" />
+            android:text="@string/robotAutoTaxiing" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="human player" />
+            android:text="@string/robotAutoHumanPlayer" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="upper hub" />
+            android:text="@string/robotAutoUpperHub" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="lower hub" />
+            android:text="@string/robotAutoLowerHub" />
 
 
     </LinearLayout>
@@ -100,7 +93,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Can you intake cargo off of the ground?" />
+                android:text="@string/intakeCargoGroundQuestion" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -110,24 +103,24 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="yes" />
+                    android:text="@string/cargoYes" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="no" />
+                    android:text="@string/cargoNo" />
 
             </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="If you have a human player, how accurate are they on a scale of 1-10? (10 being the best)" />
+        android:text="@string/humanPlayerAccuracyQuestion" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="accuracy 0"
+                android:text="@string/accuracyRating"
                 android:id="@+id/textViewAccuracy"/>
 
             <SeekBar
@@ -140,34 +133,34 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="If you are shooting in the upper hub, how many?" />
+        android:text="@string/upperHubAmountQuestion" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="type here" />
+        android:hint="@string/upperHubAmountEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="If you are shooting in the lower hub, how many?" />
+        android:text="@string/lowerHubAmountQuestion" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="type here" />
+        android:hint="@string/lowerHubAmountEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="Tele-op Questions"
+        android:text="@string/TeleopQuestionsSection"
         android:textAlignment="center"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Can you score in the either of the hubs?" />
+        android:text="@string/ScoreEitherHubsQuestion" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -177,60 +170,49 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="upper" />
+            android:text="@string/UpperHubScore" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="lower" />
+            android:text="@string/LowerHubScore" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="neither" />
+            android:text="@string/NeitherHubScore" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="both" />
+            android:text="@string/BothHubScore" />
 
     </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="How many balls can you hold at once?" />
+        android:text="@string/BallHoldAmountQuestion" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="type here" />
+        android:hint="@string/BallHoldAmountEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Where from the field can you shoot? can you shoot from anywhere or do you have to be in a certain spot?" />
+        android:text="@string/FieldWhereShootQuestion" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="type here" />
+        android:hint="@string/FieldWhereShootEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="How many balls can you hold at once?" />
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="type here" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Do you do defense?" />
+        android:text="@string/defenseQuestion" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -240,23 +222,23 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="yes" />
+            android:text="@string/yesDefense" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="no" />
+            android:text="@string/noDefense" />
     </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rate defense on a scale of 1 - 10 (10 being the best) " />
+        android:text="@string/rateDefenseQuestion" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="rating 0"
+        android:text="@string/ratingDefense"
         android:id="@+id/textViewRating"/>
 
             <SeekBar
@@ -271,13 +253,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="End game questions"
+        android:text="@string/endGameQuestionsSection"
         android:textAlignment="center"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Can your robot climb?"/>
+        android:text="@string/robotClimbQuestion"/>
 
     <RadioGroup
             android:layout_width="match_parent"
@@ -286,18 +268,18 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="yes" />
+            android:text="@string/yesClimb" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="no" />
+            android:text="@string/noClimb" />
     </RadioGroup>
 
             <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Where is your starting point?"/>
+        android:text="@string/WhereStartingPointQuestion"/>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -307,19 +289,19 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="low bar" />
+            android:text="@string/lowBarStarting" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="middle bar" />
+            android:text="@string/middleBarStarting" />
 
     </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What is the highest bar your robot can reach?"/>
+        android:text="@string/HighestBarQuestion"/>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -329,28 +311,28 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="low bar"/>
+                    android:text="@string/lowBarHighest"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="middle bar"/>
+                    android:text="@string/middleBarHighest"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="high bar"/>
+                    android:text="@string/highBarHighest"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="transversal bar"/>
+                    android:text="@string/transversalBarHighest"/>
     </RadioGroup>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="What is the most consistent bar your robot can reach?"/>
+                android:text="@string/consistentBarQuestion"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -360,29 +342,29 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="low bar"/>
+                    android:text="@string/lowBarConsistent"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="middle bar"/>
+                    android:text="@string/middleBarConsistent"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="high bar"/>
+                    android:text="@string/highBarConsistent"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="transversal bar"/>
+                    android:text="@string/transversalBarConsistent"/>
             </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="Do you use the launchpad?" />
+        android:text="@string/useLaunchpadQuestion" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -393,27 +375,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:minHeight="48dp"
-                        android:text="yes" />
+                        android:text="@string/yesLaunchpad" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:minHeight="48dp"
-                        android:text="no" />
+                        android:text="@string/noLaunchpad" />
                 </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="Robot Questions"
+        android:text="@string/robotQuestionsSection"
         android:textAlignment="center"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="Do you have an open or closed chassis?" />
+        android:text="@string/openClosedChassisQuestion" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -424,13 +406,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="open" />
+                    android:text="@string/openChassis" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="closed" />
+                    android:text="@string/closedChassis" />
 
             </RadioGroup>
 
@@ -438,7 +420,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="Do you have an open or closed bumper?" />
+        android:text="@string/openClosedBumperQuestion" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -449,13 +431,38 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="open" />
+                    android:text="@string/openBumper" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="closed" />
+                    android:text="@string/closedBumper" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/shiftingGearboxQuestion" />
+
+    <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/yesShiftingGearbox" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/noShiftingGearbox" />
 
             </RadioGroup>
 
@@ -463,62 +470,72 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Drive train" />
+        android:text="@string/driveTrainQuestion" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="type here" />
+                android:hint="@string/driveTrainEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Intake" />
+        android:text="@string/shiftingGearboxQuestions" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="type here" />
+                android:hint="@string/shiftingGearboxEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mechanism" />
+        android:text="@string/intakeQuestion" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="type here" />
+                android:hint="@string/intakeEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Programming language (robot)" />
+        android:text="@string/mechanismQuestion" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="type here" />
+                android:hint="@string/mechanismEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Programming language (app)" />
+        android:text="@string/programmingLanguageRobotQuestion" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="type here" />
+                android:hint="@string/programmingLanguageRobotEditText" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Climbing mechanism" />
+        android:text="@string/ProgrammingLanguageAppQuestion" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="type here"/>
+                android:hint="@string/programmingLanguageAppEditText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/climbingMechanismQuestion" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/climbingMechanismEditText" />
 
         </LinearLayout>
     </ScrollView>
