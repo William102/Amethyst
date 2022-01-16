@@ -20,8 +20,6 @@ import org.robovikes.amethyst.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     public NavController navController;
@@ -33,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
 
         setSupportActionBar(binding.appBarMain.toolbar);
         DrawerLayout drawer = binding.drawerLayout;

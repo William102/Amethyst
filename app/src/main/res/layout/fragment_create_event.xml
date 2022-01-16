@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <EditText
         android:id="@+id/eventName"
@@ -34,7 +35,7 @@
         android:drawableStart="@drawable/icon_start"
         android:drawablePadding="20dp"
         android:ems="10"
-        android:hint="Event Start"
+        android:hint="Event Start (1/15/2022)"
         android:inputType="textPersonName"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
@@ -54,7 +55,7 @@
         android:drawableStart="@drawable/icon_ending"
         android:drawablePadding="20dp"
         android:ems="10"
-        android:hint="Event End"
+        android:hint="Event End (1/15/2022)"
         android:inputType="textPersonName"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"

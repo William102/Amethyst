@@ -36,7 +36,6 @@ public class Event extends Fragment {
         binding = FragmentCreateEventBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        events.child("Teams").setValue("A");
         final Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(new Runnable() {
             @Override
@@ -58,12 +57,25 @@ public class Event extends Fragment {
                 String start = startDate.getText().toString().trim();
                 String end = endDate.getText().toString().trim();
                 if (!name.equals("") && !start.equals("") && !end.equals("")) {
-                    System.out.println("NON");
-                    createEvent(name, start, end);
-                    eventName.setText(null);
-                    startDate.setText(null);
-                    endDate.setText(null);
-                    System.out.println(eventName.getText() + ":" + startDate.getText() + ":" + endDate.getText());
+                    if (!name.contains(".") && !name.contains("#") && !name.contains("$") && !name.contains("[") && !name.contains("]") && !start.contains(".") && !start.contains("#") && !start.contains("$") && !start.contains("[") && !start.contains("]") && !end.contains(".") && !end.contains("#") && !end.contains("$") && !end.contains("[") && !end.contains("]")) {
+                        eventName.setError("This field is required");
+                        System.out.println("NON");
+                        createEvent(name, start, end);
+                        eventName.setText(null);
+                        startDate.setText(null);
+                        endDate.setText(null);
+                        System.out.println(eventName.getText() + ":" + startDate.getText() + ":" + endDate.getText());
+                    } else {
+                        if (name.contains(".") || name.contains("#") || name.contains("$") || name.contains("[") || name.contains("]")) {
+                            eventName.setError("May not contain " + ". # $ [ ]");
+                        }
+                        if (start.contains(".") || start.contains("#") || start.contains("$") || start.contains("[") || start.contains("]")) {
+                            startDate.setError("May not contain " + ". # $ [ ]");
+                        }
+                        if (end.contains(".") || end.contains("#") || end.contains("$") || end.contains("[") || end.contains("]")) {
+                            endDate.setError("May not contain " + ". # $ [ ]");
+                        }
+                    }
                 } else {
                     if (name.equals("")) {
                         eventName.setError("This field is required");

@@ -27,9 +27,13 @@ public class PitScoutingFragment extends Fragment {
     SeekBar seekBar;
     TextView textView;
 
+    private Spinner deviceSpinner;
+    private Spinner teamSpinner;
+
     private FragmentPitBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
 
         binding = FragmentPitBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -37,6 +41,7 @@ public class PitScoutingFragment extends Fragment {
 
         seekBar = (SeekBar) root.findViewById(R.id. seekBar);
         textView = (TextView) root.findViewById(R.id.textViewRating);
+
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -94,8 +99,24 @@ public class PitScoutingFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+
+        Spinner spinner = teamSpinner.findViewById();
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.teamNumbers,android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource()
+
         binding = null;
 
+        public void setupSpinners(){
+            View root = binding.getRoot();
+
+            teamSpinner = root.findViewById(R.id.spinner2);
+
+            ArrayAdapter<CharSequence> teamAdapter = ArrayAdapter.createFromResource(root.getContext(),R.array.teams,android.R.layout.simple_spinner_item);
+            teamAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            teamSpinner.setAdapter(teamAdapter);
+
+            teamSpinner.setOnItemSelectedListener(this);
+        }
 
     }
 }
