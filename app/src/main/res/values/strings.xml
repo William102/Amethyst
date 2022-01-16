@@ -112,5 +112,10 @@
     <string name="shiftingGearboxQuestions">What settings does your shifting gearbox have?</string>
     <string name="shiftingGearboxEditText">type here</string>
 
+        <!-- pit scouting home page extract resources -->
+    <string name="pitScoutingHeaderHome">Pit Scouting !</string>
+
+
+
 
 </resources>
