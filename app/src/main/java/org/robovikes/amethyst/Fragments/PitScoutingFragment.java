@@ -94,9 +94,6 @@ public class PitScoutingFragment extends Fragment {
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
                 BottomNavigationView scoutingBar = root.findViewById(R.id.scouting_bar);
                 NavigationUI.setupWithNavController(scoutingBar, navController);
-
-
-
             }
         }, 10);
         return root;
@@ -105,24 +102,6 @@ public class PitScoutingFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-
-        Spinner spinner = teamSpinner.findViewById();
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.teamNumbers,android.R.layout.simple_spinner_dropdown_item);
-        adapter.setDropDownViewResource()
-
         binding = null;
-
-        public void setupSpinners(){
-            View root = binding.getRoot();
-
-            teamSpinner = root.findViewById(R.id.spinner2);
-
-            ArrayAdapter<CharSequence> teamAdapter = ArrayAdapter.createFromResource(root.getContext(),R.array.teams,android.R.layout.simple_spinner_item);
-            teamAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            teamSpinner.setAdapter(teamAdapter);
-
-            teamSpinner.setOnItemSelectedListener(this);
-        }
-
     }
 }

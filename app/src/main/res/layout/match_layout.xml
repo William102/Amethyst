@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="12dp"
-        android:max="100"
+        android:max="1000"
         android:progressBackgroundTint="@color/cinnabar"
         android:progressBackgroundTintMode="add"
         android:progressTint="@color/cornflowerBlue"

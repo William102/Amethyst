@@ -73,9 +73,7 @@ public class MatchScoutingFragment extends Fragment {
             @Override
             public void run() {
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
-                BottomNavigationView scoutingBar = root.findViewById(R.id.scouting_bar);
-                NavigationUI.setupWithNavController(scoutingBar, navController);
-            }
+                BottomNavigationView scoutingBar = root.findViewById(R.id.scouting_bar); }
         }, 10);
         return root;
     }
