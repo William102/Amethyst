@@ -55,18 +55,18 @@ public class MatchScoutingFragment extends Fragment {
                 if(match > 1){
                     match--;
                     matchNum.setText(String.valueOf(match));
+                    button.setOnClickListener(new View.OnClickListener(){
+                        @Override
+                        public void onClick(View view) {
+                            NavController navController = Navigation.findNavController(getActivity(),R.id.nav_host_fragment_content_main);
+                            navController.navigate(R.id.nav_activeScouting);
+
+                        }
+                    });
                 }
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                NavController navController = Navigation.findNavController(getActivity(),R.id.nav_host_fragment_content_main);
-                navController.navigate(R.id.nav_activeScouting);
-
-            }
-        });
 
         final Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(new Runnable() {

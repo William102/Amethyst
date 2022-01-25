@@ -2,8 +2,6 @@ package org.robovikes.amethyst;
 
 import android.os.Bundle;
 import android.view.Menu;
-import android.widget.SeekBar;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_events, R.id.nav_scouting, R.id.nav_rankings, R.id.nav_matches, R.id.nav_settings,
-                R.id.nav_pit, R.id.nav_create_event, R.id.nav_create_team)
+                R.id.nav_pitHome, R.id.nav_create_event, R.id.nav_create_team, R.id.nav_pit_active_scouting)
                 .setOpenableLayout(drawer)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

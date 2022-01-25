@@ -7,7 +7,7 @@
         android:title="Match Scouting" />
 
     <item
-        android:id="@+id/nav_pit"
+        android:id="@+id/nav_pitHome"
         android:icon="@drawable/icon_matches"
         android:title="Pit Scouting" />
 </menu>

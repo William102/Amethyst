@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.PitScoutingActiveFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/autoQuestionsSection"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/haveAutoQuestion"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/have_auto_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/have_auto_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/autoYes"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/have_auto_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/autoNo"
+                    tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/robotAutoFunctionQuestion"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/during_auto_auto_taxiing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/robotAutoTaxiing" />
+
+                <CheckBox
+                    android:id="@+id/during_auto_human_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/robotAutoHumanPlayer" />
+
+                <CheckBox
+                    android:id="@+id/during_auto_upper_hub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/robotAutoUpperHub" />
+
+                <CheckBox
+                    android:id="@+id/during_auto_lower_hub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/robotAutoLowerHub" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intakeCargoGroundQuestion" />
+
+            <RadioGroup
+                android:id="@+id/intake_cargo_ground_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/intake_cargo_ground_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cargoYes" />
+
+                <RadioButton
+                    android:id="@+id/intake_cargo_ground_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cargoNo" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/humanPlayerAccuracyQuestion" />
+
+            <TextView
+                android:id="@+id/textViewAccuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accuracyRating"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarAccuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10"
+                android:progress="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upperHubAmountCycleQuestion" />
+
+            <EditText
+                android:id="@+id/upper_hub_amount_cycle_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/upperHubAmountCycleEditText"
+                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upperHubAmountMatchQuestion" />
+
+            <EditText
+                android:id="@+id/upper_hub_amount_match_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/upperHubAmountMatchEditText"
+                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lowerHubAmountCycleQuestion" />
+
+            <EditText
+                android:id="@+id/lower_hub_amount_cycle_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/lowerHubAmountCycleEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lowerHubAmountMatchQuestion" />
+
+            <EditText
+                android:id="@+id/lower_hub_amount_match_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/lowerHubAmountMatchEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TeleopQuestionsSection"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ScoreEitherHubsQuestion" />
+
+            <RadioGroup
+                android:id="@+id/score_either_hub_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/score_either_hub_upper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/UpperHubScore" />
+
+                <RadioButton
+                    android:id="@+id/score_either_hub_lower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LowerHubScore" />
+
+                <RadioButton
+                    android:id="@+id/score_either_hub_neither"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NeitherHubScore" />
+
+                <RadioButton
+                    android:id="@+id/score_either_hub_both"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BothHubScore" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/BallHoldAmountQuestion" />
+
+            <EditText
+                android:id="@+id/ball_hold_amount_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/BallHoldAmountEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/FieldWhereShootQuestion" />
+
+            <EditText
+                android:id="@+id/field_where_shoot_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/FieldWhereShootEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/defenseQuestion" />
+
+            <RadioGroup
+                android:id="@+id/defense_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/defense_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yesDefense" />
+
+                <RadioButton
+                    android:id="@+id/defense_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noDefense" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rateDefenseQuestion" />
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ratingDefense"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10"
+                android:progress="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/endGameQuestionsSection"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/robotClimbQuestion" />
+
+            <RadioGroup
+                android:id="@+id/robot_climb_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/robot_climb_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yesClimb" />
+
+                <RadioButton
+                    android:id="@+id/robot_climb_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noClimb" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/WhereStartingPointQuestion" />
+
+            <RadioGroup
+                android:id="@+id/climb_starting_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/climb_starting_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lowBarStarting" />
+
+                <RadioButton
+                    android:id="@+id/climb_starting_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/middleBarStarting" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/HighestBarQuestion" />
+
+            <RadioGroup
+                android:id="@+id/highest_bar_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/highest_bar_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lowBarHighest" />
+
+                <RadioButton
+                    android:id="@+id/highest_bar_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/middleBarHighest" />
+
+                <RadioButton
+                    android:id="@+id/highest_bar_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/highBarHighest" />
+
+                <RadioButton
+                    android:id="@+id/highest_bar_transversal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transversalBarHighest" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/consistentBarQuestion" />
+
+            <RadioGroup
+                android:id="@+id/consistent_bar_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/consistent_bar_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lowBarConsistent" />
+
+                <RadioButton
+                    android:id="@+id/consistent_bar_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/middleBarConsistent" />
+
+                <RadioButton
+                    android:id="@+id/consistent_bar_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/highBarConsistent" />
+
+                <RadioButton
+                    android:id="@+id/consistent_bar_transversal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transversalBarConsistent" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/useLaunchpadQuestion"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/launchpad_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/launchpad_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/yesLaunchpad" />
+
+                <RadioButton
+                    android:id="@+id/launchpad_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/noLaunchpad" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/robotQuestionsSection"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/openClosedChassisQuestion"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/open_closed_chassis_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/open_chassis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/openChassis" />
+
+                <RadioButton
+                    android:id="@+id/closed_chassis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/closedChassis" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/openClosedBumperQuestion"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/open_closed_bumper_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/open_bumper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/openBumper" />
+
+                <RadioButton
+                    android:id="@+id/closed_bumper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/closedBumper" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shiftingGearboxQuestion"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/shifting_gearbox_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes_shifting_gearbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/yesShiftingGearbox" />
+
+                <RadioButton
+                    android:id="@+id/no_shifting_gearbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/noShiftingGearbox" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/StarorLinearTopologyQuestion"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/star_or_linear_topology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/linear_topology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/linearTopology"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/star_topology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/starTopology"/>
+
+
+                <RadioButton
+                    android:id="@+id/neither_topology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/neitherTopology"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/both_topology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/bothTopology"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/driveTrainQuestion" />
+
+            <EditText
+                android:id="@+id/drive_train_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/driveTrainEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shiftingGearboxSettingsQuestions" />
+
+            <EditText
+                android:id="@+id/shifting_gearbox_settings_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/shiftingGearboxEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intakeQuestion" />
+
+            <EditText
+                android:id="@+id/intake_type_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/intakeEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mechanismQuestion" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/mechanismEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programmingLanguageRobotQuestion" />
+
+            <EditText
+                android:id="@+id/robot_programming_language_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/programmingLanguageRobotEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ProgrammingLanguageAppQuestion" />
+
+            <EditText
+                android:id="@+id/app_programming_language_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/programmingLanguageAppEditText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/climbingMechanismQuestion" />
+
+            <EditText
+                android:id="@+id/climbing_mechanism_type_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/climbingMechanismEditText" />
+
+
+
+            <Button
+                android:id="@+id/idsaveData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/saveDataButton" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

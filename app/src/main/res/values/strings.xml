@@ -13,13 +13,7 @@
     <string name="menu_matches">Matches</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_create">Create</string>
-    <string-array name="teamSpinner">
-        <item>701</item>
-        <item>6845</item>
-        <item>0000</item>
-        <item>9345</item>
-        <item>94533</item>
-    </string-array>
+
     <string-array name="teams">
         <item>6</item>
         <item>1057</item>
@@ -27,6 +21,18 @@
         <item>8</item>
         <item>5</item>
         <item>12</item>
+        <item>86</item>
+        <item>18057</item>
+        <item>2133</item>
+        <item>89</item>
+        <item>54</item>
+        <item>142</item>
+        <item>56</item>
+        <item>13057</item>
+        <item>2163</item>
+        <item>88</item>
+        <item>55</item>
+        <item>132</item>
     </string-array>
 
 
@@ -42,17 +48,21 @@
     <string name="robotAutoLowerHub">lower hub</string>
     <string name="cargoYes">yes</string>
     <string name="cargoNo">no</string>
-    <string name="autoQuestionsSection">Auto questions</string>
+    <string name="autoQuestionsSection">Auto Questions</string>
     <string name="haveAutoQuestion">Do you have an auto?</string>
-    <string name="robotAutoFunctionQuestion">What does your robot do if you do have an auto?</string>
+    <string name="robotAutoFunctionQuestion">What can your robot do during auto?</string>
     <string name="intakeCargoGroundQuestion">Can you intake cargo off of the ground?</string>
     <string name="humanPlayerAccuracyQuestion">If you have a human player, how accurate are they on a scale of 1-10? (10 being the best)</string>
-    <string name="upperHubAmountQuestion">If you are shooting in the upper hub, how many?</string>
-    <string name="upperHubAmountEditText">type here</string>
-    <string name="lowerHubAmountQuestion">If you are shooting in the lower hub, how many?</string>
-    <string name="lowerHubAmountEditText">type here</string>
+    <string name="upperHubAmountCycleQuestion">How many balls can your robot shoot in the upper hub per cycle?</string>
+    <string name="upperHubAmountCycleEditText">type here</string>
+    <string name="upperHubAmountMatchQuestion">How many balls can your robot shoot in the upper hub per match total (Auto and Tele)?</string>
+    <string name="upperHubAmountMatchEditText">type here</string>
+    <string name="lowerHubAmountCycleQuestion">How many balls can your robot shoot in the lower hub per cycle?</string>
+    <string name="lowerHubAmountCycleEditText">type here</string>
+    <string name="lowerHubAmountMatchQuestion">How many balls can your robot shoot in the lower hub per match total (Auto and Tele)?</string>
+    <string name="lowerHubAmountMatchEditText">type here</string>
     <string name="TeleopQuestionsSection">Tele-op Questions</string>
-    <string name="ScoreEitherHubsQuestion">Can you score in the either of the hubs?</string>
+    <string name="ScoreEitherHubsQuestion">Which hub ports can you score in?</string>
     <string name="UpperHubScore">upper</string>
     <string name="LowerHubScore">lower</string>
     <string name="NeitherHubScore">neither</string>
@@ -61,7 +71,7 @@
     <string name="BallHoldAmountEditText">type here</string>
     <string name="FieldWhereShootQuestion">Where from the field can you shoot? can you shoot from anywhere or do you have to be in a certain spot?</string>
     <string name="FieldWhereShootEditText">type here</string>
-    <string name="defenseQuestion">Do you do defense?</string>
+    <string name="defenseQuestion">Can your robot play defense?</string>
     <string name="yesDefense">yes</string>
     <string name="noDefense">no</string>
     <string name="rateDefenseQuestion">Rate defense on a scale of 1 - 10 (10 being the best)</string>
@@ -70,7 +80,7 @@
     <string name="robotClimbQuestion">Can your robot climb?</string>
     <string name="yesClimb">yes</string>
     <string name="noClimb">no</string>
-    <string name="WhereStartingPointQuestion">Where is your starting point?</string>
+    <string name="WhereStartingPointQuestion">What bar does your robot start climbing from?</string>
     <string name="lowBarStarting">low bar</string>
     <string name="middleBarStarting">middle bar</string>
     <string name="HighestBarQuestion">What is the highest bar your robot can reach?</string>
@@ -83,7 +93,7 @@
     <string name="middleBarConsistent">middle bar</string>
     <string name="highBarConsistent">high bar</string>
     <string name="transversalBarConsistent">transversal bar</string>
-    <string name="useLaunchpadQuestion">Do you use the launchpad?</string>
+    <string name="useLaunchpadQuestion">Do consistently you use the launchpad?</string>
     <string name="yesLaunchpad">yes</string>
     <string name="noLaunchpad">no</string>
     <string name="robotQuestionsSection">Robot Questions</string>
@@ -106,16 +116,23 @@
     <string name="climbingMechanismQuestion">Climbing mechanism</string>
     <string name="climbingMechanismEditText">type here</string>
     <string name="accuracyRating">accuracy 0</string>
-    <string name="shiftingGearboxQuestion">Do you use a shifting gearbox?</string>
+    <string name="shiftingGearboxQuestion">Does your robot use a shifting gearbox?</string>
     <string name="yesShiftingGearbox">yes</string>
     <string name="noShiftingGearbox">no</string>
-    <string name="shiftingGearboxQuestions">What settings does your shifting gearbox have?</string>
+    <string name="shiftingGearboxSettingsQuestions">What settings does your shifting gearbox have?</string>
     <string name="shiftingGearboxEditText">type here</string>
 
         <!-- pit scouting home page extract resources -->
-    <string name="pitScoutingHeaderHome">Pit Scouting !</string>
-
-
+    <string name="pitScoutingHeaderHome">Pit Scouting</string>
+    <string name="startPitScoutButton">start pit scouting</string>
+    <string name="chooseTeamTextView">Choose your team to scout</string>
+    <string name="StarorLinearTopologyQuestion">Do you use star topology or linear topology (CAN system)?</string>
+    <string name="linearTopology">linear topology</string>
+    <string name="starTopology">star topology</string>
+    <string name="neitherTopology">neither</string>
+    <string name="bothTopology">both</string>
+    <string name="saveDataButton">submit</string>
+    <string name="pitScoutingWarning">Click the button below to start pit scouting. When you are finished, click submit. Please do not leave page until you are finished with pit scouting!</string>
 
 
 </resources>
